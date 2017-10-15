@@ -1,0 +1,27 @@
+#generatortool
+*.properties
+
+#python 
+*.pyc
+
+#Data File
+*.csv
+*.xlsx
+*.xls
+
+
+#pycharm config
+.idea/
+**/.idea/
+
+#unittest
+UnitTestKeywords/.coverage
+*.coverage
+.DS_Store
+htmlcov/
+**/htmlcov/
+*/htmlcov/
+/htmlcov/*
+Test Report/*
+Test Report/**
+Test Suites/*
