@@ -1,0 +1,30 @@
+1508037926099	geckodriver	INFO	geckodriver 0.18.0
+1508037926105	geckodriver	INFO	Listening on 127.0.0.1:32323
+1508037928178	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1508037928988	Marionette	INFO	Enabled via --marionette
+[Child 3156] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3156] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1508037930339	Marionette	INFO	Listening on port 32329
+1508037930373	Marionette	INFO	Listening on port 32329
+1508037931297	Marionette	WARN	TLS certificate errors will be ignored for this session
+1508037931327	Marionette	DEBUG	loaded listener.js
+1508037931353	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1508037932097	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1508037932097	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1508037932211	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.vn/?gfe_rd=cr&dcr=0&ei=KtXiWZDFDteBoAOa7JDYCQ&gws_rd=ssl"
+1508037932826	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967301"
+1508037932829	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.vn/?gfe_rd=cr&dcr=0&ei=KtXiWZDFDteBoAOa7JDYCQ&gws_rd=ssl"
+1508037932831	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.vn/?gfe_rd=cr&dcr=0&ei=KtXiWZDFDteBoAOa7JDYCQ&gws_rd=ssl"
+1508037933268	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.vn/?gfe_rd=cr&dcr=0&ei=KtXiWZDFDteBoAOa7JDYCQ&gws_rd=ssl"
+1508037933278	Marionette	INFO	New connections will no longer be accepted
+1508165309537	geckodriver	INFO	geckodriver 0.18.0
+1508165309543	geckodriver	INFO	Listening on 127.0.0.1:65332
+1508165311593	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1508165312471	Marionette	INFO	Enabled via --marionette
+[Child 12608] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12608] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1508165313997	Marionette	INFO	Listening on port 65340
+1508165314004	Marionette	INFO	Listening on port 65340
+1508165314711	Marionette	WARN	TLS certificate errors will be ignored for this session
+1508165314745	Marionette	DEBUG	loaded listener.js
+1508165322407	Marionette	INFO	New connections will no longer be accepted

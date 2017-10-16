@@ -22,3 +22,5 @@ class Chrome(SeleniumDriver):
 	def set_driver_options(self, options):
 		if isinstance(options, Options):
 			self.options = options
+
+	__module__ = "chrome"
