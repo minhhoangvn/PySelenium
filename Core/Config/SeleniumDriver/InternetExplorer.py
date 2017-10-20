@@ -1,4 +1,4 @@
-from .SeleniumDriver import SeleniumDriver
+from .Driver import SeleniumDriver
 
 __author__ = 'hnminh@outlook.com'
 

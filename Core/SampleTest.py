@@ -1,5 +1,5 @@
+from Core.Base.BaseTest import BaseTest
 from Core.Config.DriverFactory import DriverFactory
-from .BaseTest import BaseTest
 
 __author__ = 'hnminh@outlook.com'
 

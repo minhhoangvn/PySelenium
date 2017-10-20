@@ -3,7 +3,7 @@ import os
 
 from Core.Config.SeleniumDriver.Chrome import Chrome
 from Core.Config.SeleniumDriver.Firefox import Firefox
-from Core.InternalAPI.Singleton import Singleton
+from Core.Utils.Singleton import Singleton
 
 
 class DriverFactory(metaclass=Singleton):
@@ -36,6 +36,7 @@ class DriverFactory(metaclass=Singleton):
 	@staticmethod
 	def dispose_driver():
 		DriverFactory.__driver_creator.dispose_driver()
+		DriverFactory.__driver_creator = None
 
 	@staticmethod
 	def get_browser_running():
