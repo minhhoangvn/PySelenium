@@ -1,17 +1,11 @@
 __author__ = 'hnminh@outlook.com'
 import os
-
-from Core.Config.SeleniumDriver.Chrome import Chrome
-from Core.Config.SeleniumDriver.Firefox import Firefox
 from Core.Utils.Singleton import Singleton
+from Core.Utils.Constant import Constant
 
 
 class DriverFactory(metaclass=Singleton):
 	__driver_creator = None
-
-	@staticmethod
-	def drivers_creator_cls():
-		return Chrome, Firefox
 
 	@staticmethod
 	def set_driver_options(options):
@@ -24,7 +18,7 @@ class DriverFactory(metaclass=Singleton):
 	@staticmethod
 	def create_driver():
 		if DriverFactory.__driver_creator is None:
-			for driver_creator in DriverFactory.drivers_creator_cls():
+			for driver_creator in Constant.WEB_DRIVER_CLASS:
 				if DriverFactory.get_browser_running() in driver_creator.__module__:
 					DriverFactory.__driver_creator = driver_creator()
 		DriverFactory.__driver_creator.create_driver()

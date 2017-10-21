@@ -104,3 +104,23 @@
 1508170960791	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483727"
 1508170961085	Marionette	DEBUG	Received DOM event "pageshow" for "http://vtc.vn/"
 1508170961114	Marionette	INFO	New connections will no longer be accepted
+1508573327362	geckodriver	INFO	geckodriver 0.18.0
+1508573327368	geckodriver	INFO	Listening on 127.0.0.1:24083
+1508573329439	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1508573329959	Marionette	INFO	Enabled via --marionette
+[GPU 11540] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17096] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17096] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1508573331136	Marionette	INFO	Listening on port 24089
+1508573331146	Marionette	INFO	Listening on port 24089
+1508573331454	Marionette	WARN	TLS certificate errors will be ignored for this session
+1508573331485	Marionette	DEBUG	loaded listener.js
+1508573331508	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1508573332437	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1508573332437	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1508573332554	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.vn/?gfe_rd=cr&dcr=0&ei=kgDrWZ7aNIiGuwTi35-4BQ&gws_rd=ssl"
+1508573333194	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967301"
+1508573333199	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.vn/?gfe_rd=cr&dcr=0&ei=kgDrWZ7aNIiGuwTi35-4BQ&gws_rd=ssl"
+1508573333202	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.vn/?gfe_rd=cr&dcr=0&ei=kgDrWZ7aNIiGuwTi35-4BQ&gws_rd=ssl"
+1508573333883	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.vn/?gfe_rd=cr&dcr=0&ei=kgDrWZ7aNIiGuwTi35-4BQ&gws_rd=ssl"
+1508573333924	Marionette	INFO	New connections will no longer be accepted

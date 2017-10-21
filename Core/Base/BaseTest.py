@@ -9,7 +9,6 @@ __author__ = 'hnminh@outlook.com'
 class BaseTest(unittest.TestCase):
 	def __init__(self, *args, **kwargs):
 		super(BaseTest, self).__init__(*args, **kwargs)
-		self.__browser = os.environ.get('browser', 'chrome')
 		self.__api_test = os.environ.get('api', False)
 
 	def setUp(self):

@@ -1,13 +1,9 @@
-from selenium.webdriver.remote.webelement import WebElement
-
-from Core.Config.DriverFactory import DriverFactory
-
 __author__ = 'hnminh@outlook.com'
 
 
 class BaseElement(object):
-	def __init__(self, by, locator, is_list_element=False):
-		self.__wrapper_element = self.__get_wrapper_element(by, locator, is_list_element)
+	def __init__(self, element):
+		self.__wrapper_element = element
 
 	def click_to_element(self):
 		self.__wrapper_element.click()
@@ -33,12 +29,6 @@ class BaseElement(object):
 	def is_displayed(self):
 		return self.__wrapper_element.is_displayed()
 
-
-
-	@staticmethod
-	def __get_wrapper_element(by, locator, is_list_element):
-		driver = DriverFactory.get_driver()
-		if not is_list_element:
-			return driver.find_element(by, locator)
-		else:
-			return driver.find_elements(by, locator)
+	@property
+	def get_wrapper_element(self):
+		return self.__wrapper_element
