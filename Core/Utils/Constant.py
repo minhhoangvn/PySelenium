@@ -25,6 +25,8 @@ class ConstantMeta(type):
 
 
 class Constant(metaclass=ConstantMeta):
+	DRIVER_CREATOR_KEY = "driver_creator"
+	WEB_DRIVER_KEY = "WEB_DRIVER"
 	WEB_ELEMENT_CLASS = (BaseElement,)
 	WEB_DRIVER_CLASS = (Chrome, Firefox, InternetExplorer)
 	FINDER_OPTIONS = (

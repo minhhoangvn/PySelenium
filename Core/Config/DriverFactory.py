@@ -1,7 +1,9 @@
 __author__ = 'hnminh@outlook.com'
 import os
-from Core.Utils.Singleton import Singleton
+
+from Core.Config.Settings import Settings
 from Core.Utils.Constant import Constant
+from Core.Utils.Singleton import Singleton
 
 
 class DriverFactory(metaclass=Singleton):
@@ -17,20 +19,21 @@ class DriverFactory(metaclass=Singleton):
 
 	@staticmethod
 	def create_driver():
-		if DriverFactory.__driver_creator is None:
+		if getattr(Settings.THREAD_LOCAL, Constant.DRIVER_CREATOR_KEY, None) is None:
 			for driver_creator in Constant.WEB_DRIVER_CLASS:
 				if DriverFactory.get_browser_running() in driver_creator.__module__:
-					DriverFactory.__driver_creator = driver_creator()
-		DriverFactory.__driver_creator.create_driver()
+					Settings.THREAD_LOCAL.driver_creator = driver_creator()
+		Settings.THREAD_LOCAL.driver_creator.create_driver()
+		Settings.THREAD_LOCAL.web_driver = Settings.THREAD_LOCAL.driver_creator.driver
 
 	@staticmethod
 	def get_driver():
-		return DriverFactory.__driver_creator.driver
+		return Settings.THREAD_LOCAL.web_driiver
 
 	@staticmethod
 	def dispose_driver():
-		DriverFactory.__driver_creator.dispose_driver()
-		DriverFactory.__driver_creator = None
+		if getattr(Settings.THREAD_LOCAL, Constant.DRIVER_CREATOR_KEY, None) is not None:
+			Settings.THREAD_LOCAL.driver_creator.dispose_driver()
 
 	@staticmethod
 	def get_browser_running():
